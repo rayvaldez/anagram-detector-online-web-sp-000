@@ -1,16 +1,16 @@
 require 'pry'
 
 class Anagram
-  attr_accessor :word_list
+  attr_accessor :word
 
   def initialize(word)
-    @word_list = word
+    @word = word
   end
 
-  def match(word)
-    word.each do |a|
-      a.split("").sort
-      
+  def match(words_array)
+    words_array.select do |element|
+      element.split("").sort == words_array.split("").sort
     end
   end
+  
 end
