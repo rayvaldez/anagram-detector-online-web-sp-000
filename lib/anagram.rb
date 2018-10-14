@@ -8,9 +8,9 @@ class Anagram
   end
 
   def match(word)
-    word.each do |a, b|
+    word.each do |a|
       a.split("").sort
-      binding.pry
+      
     end
   end
 end
