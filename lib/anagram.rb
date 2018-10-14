@@ -7,7 +7,9 @@ class Anagram
     @word_list = word
   end
 
-  def self.match
-
+  def match(word)
+    word.each do |a|
+      binding.pruy
+    end
   end
 end
