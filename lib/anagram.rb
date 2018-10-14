@@ -9,7 +9,7 @@ class Anagram
 
   def match(word)
     word.each do |a|
-      binding.pruy
+      binding.pry
     end
   end
 end
